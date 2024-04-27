@@ -28,3 +28,6 @@
 ## Comandos Docker:
 - abra um terminal dentro da pasta docker
 -  execute o comando: docker-compose up
+  
+## Diagrama
+![DiagramaHexagonal](https://github.com/Ernilson/hexagonal/assets/30840118/7b0f2644-14a2-4a30-8ea1-e504a99876d7)
