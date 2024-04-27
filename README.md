@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 - Simples api desenvolvida em uma arquitetura hexagonal onde o núcleo da aplicação depende apenas das interfaces 
- definidas pelas portas. Isso garante que o núcleo seja independente de tecnologias específicas e facilite a troca de tecnologias.
+ definidas pelas portas. Isso garante que o núcleo seja independente de tecnologias específicas e facilite a troca destas.
 
 ## Ferramentas:
 
