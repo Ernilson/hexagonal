@@ -20,7 +20,7 @@
 
 ## Banco de Dados:
 - PostgreSQL
-- Nome do Banco: devsibredb
+- Nome do Banco: testdb1
 
 ## EXECUTE
 - mvn clean install
