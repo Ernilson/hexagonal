@@ -1,0 +1,9 @@
+				Steps
+
+1 - application/core/domain -> crie a entidade domain
+2 - application/core/usecase -> onde é determinado tipo de serviço ex:(FormularioDomain find(Long id))
+3 - application/port/ -> onde é criado uma interfaca de saida pra buscar a entidadeDomain ex: (Optional<FormularioDomain> find(Long id));
+após criar a inteface é necessario injeta-la na usecase (formularioDomain) onde dever ser implementada a regra de negócio.
+4 - application/adapter/output -> criar uma classe no adapter para buscar o Formulario por id e implementa a interface(FindFormularioByIdOutputPort)
+após isso deve-se implementa os converters de domain para entidades
+5 - application/adapter/input/Controller -> onde vai implementar converters de entidades para dto's
