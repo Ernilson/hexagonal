@@ -1,5 +1,8 @@
 package br.com.hexagonal.adapters.outPut.entity.converters;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Component;
 
 import br.com.hexagonal.application.core.domain.FormularioDomain;
@@ -46,4 +49,19 @@ public class FormularioConverter {
     	dto.setZap(dto.getZap());
         return dto;
     }
+    
+  //Converte de Domain para Entity
+    public List<FormularioEntity> toEntityList(List<FormularioDomain> formularioList) {
+        List<FormularioEntity> entityList = new ArrayList<>();
+        for (FormularioDomain formulario : formularioList) {
+            FormularioEntity entity = new FormularioEntity();
+            entity.setId(formulario.getId());
+            entity.setNome(formulario.getNome());
+            entity.setEmail(formulario.getEmail());
+            entity.setZap(formulario.getZap());
+            entityList.add(entity);
+        }
+        return entityList;
+    }
+
 }
