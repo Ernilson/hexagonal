@@ -1,7 +1,7 @@
 				Steps
 (Estou usando a criação do serviço de busca por Id, para exemplificar os passos abaixo)
 1 - application/core/domain -> crie a entidade domain
-2 - application/core/domain/ports/input -> cria-se a interface do serviço
+2 - application/core/ports/input -> cria-se a interface do serviço
 3 - application/core/usecase -> onde é implementada a interface determinado tipo de serviço ex:(FormularioDomain find(Long id))
 4 - application/OutputPort/ -> onde é criado uma interface de saida pra buscar a entidadeDomain ex: (Optional<FormularioDomain> find(Long id));
 após criar a inteface é necessario injeta-la na usecase (formularioDomain) onde dever ser implementada a regra de negócio.
