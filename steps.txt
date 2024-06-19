@@ -7,5 +7,5 @@
 após criar a inteface é necessario injeta-la na usecase (formularioDomain) onde dever ser implementada a regra de negócio.
 5 - adapter/outputPort -> criar uma classe no adapter para buscar o Formulario por id, anota-la com @Service e implementa a interface(FindFormularioByIdOutputPort)
 após isso deve-se implementa os converters de domain para entidades application/adapter/outputPort/entity/converter
-6 - application/adapter/input/Controller -> onde vai implementar converters de entidades para dto's
+6 - adapter/input/Controller -> onde vai implementar converters de entidades para dto's
 7 - config
